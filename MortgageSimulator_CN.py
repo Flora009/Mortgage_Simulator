@@ -23,10 +23,10 @@ with col1:
     interest_rate = st.number_input("Enter your home loan interest rate(%): |输入房贷利率", min_value=0.0, format='%f')
 
 with col2:
-    st.subheader("Down Payment Percent|首付")
-    down_payment_percent = st.number_input("Enter your down payment percent(%): ", min_value=0.0, format='%f')
+    st.subheader("Down Payment Percent|首付比例")
+    down_payment_percent = st.number_input("Enter your down payment percent(%):|输入首付比例 ", min_value=0.0, format='%f')
     
-    st.subheader("Target Payment Period (Years)")
+    st.subheader("Target Payment Period (Years)|贷款年限")
     payment_years = st.number_input("Enter your target payment period (years): |输入贷款年限", min_value=3, format='%d')
     
 
@@ -39,4 +39,4 @@ monthly_installment = -1*npf.pmt(periodic_interest_rate , payment_months, loan_a
 
 st.subheader("**Down Payment|首付金额:** $" + str(round(down_payment,2)))
 st.subheader("**Loan Amount|贷款金额:** $" + str(round(loan_amount, 2)))
-st.subheader("**Monthly Installment|月供:** $" + str(round(monthly_installment, 2)))
+st.subheader("**Monthly Installment|每月还款金额:** $" + str(round(monthly_installment, 2)))
