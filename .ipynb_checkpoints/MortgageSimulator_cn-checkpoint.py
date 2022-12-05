@@ -19,7 +19,7 @@ with col1:
     st.subheader("房屋价值")
     home_value = st.number_input("输入房屋价值($): ", min_value=0.0, format='%f')
     
-    st.subheader("Loan Interest Rate|房贷利率")
+    st.subheader("房贷利率")
     interest_rate = st.number_input("输入房贷利率(%): ", min_value=0.0, format='%f')
 
 with col2:
