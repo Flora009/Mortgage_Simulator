@@ -12,7 +12,7 @@ st.set_page_config(
 
 st.title("还款计算器")
 
-st.header("**贷款详情**")
+#st.header("**贷款详情**")
 col1, col2 = st.columns(2)
 
 with col1:
