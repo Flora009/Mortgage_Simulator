@@ -27,7 +27,7 @@ with col2:
     down_payment_percent = st.number_input("输入首付比例(%): ", min_value=0.0, format='%f')
     
     st.subheader("贷款年限 (年)")
-    payment_years = st.number_input("输入贷款年限 (年): |", min_value=3, max_value=30, value=max_value, format='%d')
+    payment_years = st.number_input("输入贷款年限 (年): |", min_value=3, max_value=30, value=30, format='%d')
     
 
 down_payment = home_value* (down_payment_percent / 100)
